@@ -92,34 +92,32 @@ npm run build
 ## Project Structure
 
 ```text
-simple-color-generator/
+random-color-generator/
 ├── screenshots/
 │   ├── 01-main.png
-│   ├── 02-random-color.png
-│   └── 03-copy-color.png
-├── public/
+│   ├── 02-random-colour.png
+│   └── 03-copy-colour.png
 ├── src/
-│   ├── assets/
+│   ├── components/
+│   │   ├── ColorInfo.jsx
+│   │   ├── ColorPreview.jsx
+│   │   └── GenerateButton.jsx
 │   ├── App.jsx
 │   ├── App.css
-│   ├── index.css
-│   └── main.jsx
-├── index.html
-├── package.json
-├── package-lock.json
-└── vite.config.js
+│   └── index.css
+├── README.md
+└── package.json
 ```
-
 ## Component Overview
 
-| File | Responsibility |
+| Component | Description |
 |---|---|
-| `App.jsx` | Contains the color generation logic, clipboard functionality, state, and main interface |
-| `App.css` | Styles the application elements |
-| `index.css` | Contains global styles |
-| `main.jsx` | Entry point of the React application |
+| `App.jsx` | Main component of the application. |
+| `ColorPreview.jsx` | Shows the current generated color. |
+| `ColorInfo.jsx` | Shows the HEX color code and allows copying it. |
+| `GenerateButton.jsx` | Generates a new random color when clicked. |
 
 ## Author
 
 **Keshav Sahu**  
-Master of Computer Applications (MCA) – AI
+Master of Computer Applications (MCA) 
