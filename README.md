@@ -4,19 +4,16 @@ A simple and interactive React application that generates random HEX colors. Use
 
 The application displays the generated color in a preview box and provides a confirmation message when the color code is copied.
 
-## Preview
+## Screenshots
 
 ### Main Interface
-
 ![Main Interface](screenshots/01-main.png)
 
 ### Random Color Generation
-
-![Random Color Generation](screenshots/02-random-color.png)
+![Random Color Generation](screenshots/02-random-colour.png)
 
 ### Copy Color Functionality
-
-![Copy Color Functionality](screenshots/03-copy-color.png)
+![Copy Color Functionality](screenshots/03-copy-colour.png)
 
 ## Features
 
