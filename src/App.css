@@ -1,68 +1,65 @@
 .app {
   min-height: 100vh;
-  text-align: center;
-  padding: 150px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 60px;
-  margin-bottom: 55px;
+.app h1 {
+  font-size: 48px;
+  margin: 0 0 30px;
 }
 
 .color-preview {
-  width: 550px;
-  height: 370px;
-  max-width: 90%;
-  margin: 0 auto 50px;
-  border-radius: 18px;
-  transition: background-color 0.3s;
+  width: 60%;
+  max-width: 720px;
+  height: 300px;
+  border-radius: 20px;
+  margin-bottom: 25px;
 }
 
 .color-info h2 {
-  font-size: 45px;
-  margin-bottom: 35px;
-  cursor: pointer;
+  font-size: 36px;
+  margin: 15px 0;
 }
 
 .color-info p {
-  font-size: 28px;
-  margin-bottom: 30px;
+  font-size: 22px;
+  margin: 20px 0;
 }
 
 .generate-button {
-  background: black;
-  color: white;
+  padding: 15px 35px;
+  font-size: 20px;
   border: none;
   border-radius: 12px;
-  padding: 20px 45px;
-  font-size: 24px;
+  background: black;
+  color: white;
   cursor: pointer;
 }
 
-.generate-button:hover {
-  opacity: 0.8;
-}
-
 @media (max-width: 600px) {
-  .app {
-    padding-top: 80px;
-  }
-
-  h1 {
-    font-size: 38px;
+  .app h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
   }
 
   .color-preview {
-    height: 250px;
+    width: 90%;
+    height: 220px;
   }
 
   .color-info h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .color-info p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .generate-button {
