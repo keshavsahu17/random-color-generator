@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-
 import ColorPreview from './components/ColorPreview'
 import ColorInfo from './components/ColorInfo'
 import GenerateButton from './components/GenerateButton'
@@ -28,11 +27,7 @@ function App() {
 
       <ColorPreview color={color} />
 
-      <ColorInfo
-        color={color}
-        copied={copied}
-        onCopy={copyColor}
-      />
+      <ColorInfo color={color} copied={copied} onCopy={copyColor} />
 
       <GenerateButton onGenerate={generateColor} />
     </div>

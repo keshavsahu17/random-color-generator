@@ -1,25 +1,71 @@
 .app {
+  min-height: 100vh;
   text-align: center;
-  margin-top: 100px;
+  padding: 150px 20px 50px;
   font-family: Arial, sans-serif;
 }
 
-.color-box {
-  width: 300px;
-  height: 200px;
-  margin: 30px auto;
-  border-radius: 10px;
+h1 {
+  font-size: 60px;
+  margin-bottom: 55px;
 }
 
-h2 {
+.color-preview {
+  width: 550px;
+  height: 370px;
+  max-width: 90%;
+  margin: 0 auto 50px;
+  border-radius: 18px;
+  transition: background-color 0.3s;
+}
+
+.color-info h2 {
+  font-size: 45px;
+  margin-bottom: 35px;
   cursor: pointer;
 }
 
-button {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
+.color-info p {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.generate-button {
   background: black;
   color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 20px 45px;
+  font-size: 24px;
   cursor: pointer;
+}
+
+.generate-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding-top: 80px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .color-preview {
+    height: 250px;
+  }
+
+  .color-info h2 {
+    font-size: 32px;
+  }
+
+  .color-info p {
+    font-size: 20px;
+  }
+
+  .generate-button {
+    font-size: 18px;
+  }
 }

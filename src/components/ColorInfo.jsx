@@ -1,15 +1,9 @@
 function ColorInfo({ color, copied, onCopy }) {
   return (
     <div className="color-info">
-      <p className="color-label">CURRENT COLOR</p>
+      <h2 onClick={onCopy}>{color.toUpperCase()}</h2>
 
-      <button className="hex-code" onClick={onCopy}>
-        {color.toUpperCase()}
-      </button>
-
-      <p className="copy-hint">
-        {copied ? '✓ Copied to clipboard!' : 'Click HEX code to copy'}
-      </p>
+      <p>{copied ? 'Copied to clipboard!' : 'Click the HEX code to copy'}</p>
     </div>
   )
 }
