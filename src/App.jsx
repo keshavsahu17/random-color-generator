@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 
+import ColorPreview from './components/ColorPreview'
+import ColorInfo from './components/ColorInfo'
+import GenerateButton from './components/GenerateButton'
+
 function App() {
   const [color, setColor] = useState('#A78BFA')
   const [copied, setCopied] = useState(false)
@@ -22,13 +26,15 @@ function App() {
     <div className="app">
       <h1>Color Generator</h1>
 
-      <div className="color-box" style={{ backgroundColor: color }} />
+      <ColorPreview color={color} />
 
-      <h2 onClick={copyColor}>{color.toUpperCase()}</h2>
+      <ColorInfo
+        color={color}
+        copied={copied}
+        onCopy={copyColor}
+      />
 
-      <p>{copied ? 'Copied to clipboard!' : 'Click the HEX code to copy'}</p>
-
-      <button onClick={generateColor}>Generate Color</button>
+      <GenerateButton onGenerate={generateColor} />
     </div>
   )
 }
