@@ -8,13 +8,13 @@ function App() {
   const [color, setColor] = useState('#A78BFA')
   const [copied, setCopied] = useState(false)
 
-  function generateColor() {
-    const newColor =
-      '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')
+function generateColor() {
+  const newColor =
+    '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')
 
-    setColor(newColor)
-    setCopied(false)
-  }
+  setColor(newColor)
+  setCopied(false)
+}
 
   async function copyColor() {
     await navigator.clipboard.writeText(color)
